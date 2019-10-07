@@ -29,7 +29,7 @@ def add_bmi_result(result):
         print("Healthy")
     elif my_bmi >= 25 and my_bmi < 30:
         print("Overweight")
-    elif my_bmi >= 30 and myBMI < 40:
+    elif my_bmi >= 30 and my_bmi < 40:
         print("Obese")
     else:
         "Extremely Obese"
