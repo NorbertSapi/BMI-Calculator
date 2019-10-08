@@ -2,14 +2,18 @@
 import math
 
 
+# create class BMI3
 class BMI3:
     pass
 
     def __init__(self, name):
+        assert isinstance(name, object)
         self.name = name
 
+# this method counts BMI
     def choose_weight_measurement(self):
         measurement = input("Would you like to use kg or lbs? ")
+# this part use meter and kg to count BMI
         if measurement == "kg":
             kg = float(input("Please enter your weight in kg: "))
             cm = input("Please enter your height in centimeter: ")
@@ -27,6 +31,7 @@ class BMI3:
                 print("Obese")
             else:
                 "Extremely Obese"
+# this part use lbs and inches to count BMI
         elif measurement == "lbs":
             lbs = input("Please enter your weight in lbs ")
             inches = input("Please enter your height in inches: ")
@@ -43,6 +48,7 @@ class BMI3:
                 print("Obese")
             else:
                 "Extremely Obese"
+# this part handle wrong input for the measurement choice
         else:
             print("You need to choose between kg or lbs!")
             self.choose_weight_measurement()
