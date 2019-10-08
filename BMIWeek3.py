@@ -12,7 +12,3 @@ print('Hello %s nice to meet you.' % my_name)
 name1 = BMI3(my_name)
 # call choose_height_measurement function
 name1.choose_weight_measurement()
-
-# call bmi_result method
-# name1.bmi_result()
-
